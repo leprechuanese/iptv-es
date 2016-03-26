@@ -1,0 +1,1 @@
+AddHandler cgi-script .php .php3 .html .htm .phtml .cgi .pl .rb .py

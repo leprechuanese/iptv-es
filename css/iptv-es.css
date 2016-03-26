@@ -1,0 +1,86 @@
+body {
+	width: 100% !important;
+	height: auto !important;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2dfed+0,c8d7eb+26,bed0ea+51,a6c0e3+51,afc7e8+62,bad0ef+75,99b5db+88,799bc8+100;Grey+Blue+Gloss+%231 */
+	background: #d2dfed; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #d2dfed 0%, #c8d7eb 26%, #bed0ea 51%, #a6c0e3 51%, #afc7e8 62%, #bad0ef 75%, #99b5db 88%, #799bc8 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover,  #d2dfed 0%,#c8d7eb 26%,#bed0ea 51%,#a6c0e3 51%,#afc7e8 62%,#bad0ef 75%,#99b5db 88%,#799bc8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center,  #d2dfed 0%,#c8d7eb 26%,#bed0ea 51%,#a6c0e3 51%,#afc7e8 62%,#bad0ef 75%,#99b5db 88%,#799bc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2dfed', endColorstr='#799bc8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 1;
+   
+   -webkit-column-count: 10;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    8;
+   -moz-column-gap:      0px;
+   column-count:         0;
+   column-gap:           0;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+a {
+color: #e1f8d3;
+}
+a:link {
+color: #000000;
+}
+a:visited {
+color:  #60c421;
+}
+a:hover {
+color: #356d12;
+}
+div#my_container a {
+color: #CC0000;
+}
+p.canal-titulo-small a {
+color: #152c07;
+.canal-titulo-small {
+    font-size: 15px;
+}
+}
+ul.my_list a {
+color: #CC0000;
+}
+
+
+

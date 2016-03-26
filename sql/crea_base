@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#agarra los logos
+#for i in $(cat ../canales.m3u|egrep -o 'https?://[^ ]+' |  sed -r 's/",//g' | grep png); do echo "bajando : $i";wget "$i";done
+
+#crea .m3u
+
+echo "$0"
+#
+
+for i in $(cat canales.m3u); do 
+	
+	#EXTINF:-1,Television Mexiquense
+	t_canal=$(echo "$i" | grep EXTINF)
+	titulo_canal="${t_canal/'#EXTINF:-1,'/}"
+
+	if [[ -z "$titulo_canal" ]]; then
+		#verifica si varieble esta vacia, si esta vacia saca titulo del  tvg-name=
+		echo "sacando tvg-name="
+		echo "$i" #| grep "tvg-name"
+	#else
+		#sino esta vacia, asume como titulo de canal
+		#echo "titulo_canal: $titulo_canal"
+        fi
+	echo "$titulo_canal"
+
+	#m3u_lista=$(echo "$i" | grep m3u)
+	#echo "$m3u_lista"
+done
+
+
